@@ -1,0 +1,70 @@
+{
+  "page": 1,
+  "title": "13.2 Rate equation: definition, rate constant k and its units",
+  "summary": "Defines the rate equation Rate = k[A]^x[B]^y for aA + bB -> products, where k is the rate constant and x, y are the orders of reaction found only by experiment (not from the mole ratio a, b). The overall order is x+y. Section B explains that k is constant for a given reaction at a given temperature, increases with temperature, and that the unit of k depends on the overall order (zeroth, first, second) when rate is in mol dm^-3 s^-1.",
+  "blocks": [
+    {"id": "b1", "type": "heading", "text": "13.2 Rate equation", "bbox": [0.13, 0.05, 0.89, 0.09]},
+    {"id": "b2", "type": "heading", "text": "A. What is a rate equation?", "bbox": [0.14, 0.10, 0.40, 0.12]},
+    {"id": "b3", "type": "equation", "text": "Consider the following equation: aA + bB -> products", "bbox": [0.18, 0.14, 0.62, 0.20]},
+    {"id": "b4", "type": "equation", "text": "The rate equation can be written as: Rate = k[A]^x[B]^y (highlighted yellow)", "bbox": [0.20, 0.21, 0.64, 0.27]},
+    {"id": "b5", "type": "text", "text": "where k is called the rate constant and the powers x and y are called the order of reaction with respect to reactants A and B respectively.", "bbox": [0.21, 0.27, 0.88, 0.33]},
+    {"id": "b6", "type": "text", "text": "The values of x and y can be any real numbers (1, 2, 3, etc.), fractions or even zero. These values can only be determined from experiments.", "bbox": [0.18, 0.34, 0.88, 0.39]},
+    {"id": "b7", "type": "text", "text": "The overall order of the reaction is the sum of the powers, x+y.", "bbox": [0.18, 0.40, 0.78, 0.43]},
+    {"id": "b8", "type": "note", "text": "IMPORTANT NOTES: Rate equation is also known as rate laws. The overall order of reaction is usually less than 3. Wrong expressions of rate equation (each crossed out): 'Rate Equation = k[A]^x[B]^y', 'R = k[A]^x[B]^y', and 'k[A]^x[B]^y' with no 'Rate =' on the left.", "bbox": [0.10, 0.44, 0.90, 0.56]},
+    {"id": "b9", "type": "handwriting", "text": "(purple) 'x, y are the order of reaction, not mole ratio !!!'; 'x not-equal a'; 'y not-equal b'; (orange) '[ ] : concentration'", "bbox": [0.66, 0.10, 0.98, 0.26]},
+    {"id": "b10", "type": "heading", "text": "B. Rate constant and order of reaction", "bbox": [0.14, 0.58, 0.50, 0.61]},
+    {"id": "b11", "type": "text", "text": "I) Rate of constant [sic]: Rate constant, k, is a constant value for a specific reaction at a given temperature. Its value increases with temperature. A large value of k indicates a faster chemical reaction.", "bbox": [0.17, 0.61, 0.88, 0.73]},
+    {"id": "b12", "type": "handwriting", "text": "(orange) 'doesn't change'; 'same reaction occur at same temp => same value of k !'; 'up temp, up k'", "bbox": [0.40, 0.58, 0.98, 0.69]},
+    {"id": "b13", "type": "text", "text": "The table below shows the units of k for reactions of different overall orders. (Note: Let the unit of rate be mol dm^-3 s^-1.)", "bbox": [0.17, 0.74, 0.88, 0.79]},
+    {"id": "b14", "type": "table", "text": "Table: Rate equation | Order of reaction | Unit of rate constant, k", "bbox": [0.16, 0.79, 0.86, 0.93]},
+    {"id": "b15", "type": "handwriting", "text": "(red) Unit derivations. Zeroth: 'mol dm^-3 s^-1 = k', 'rate = k', '[A]^0 = 1'. First: 'mol dm^-3 s^-1 = k (mol dm^-3)' -> cancel mol dm^-3 -> 'k = s^-1'. Second: 'mol dm^-3 s^-1 = k (mol dm^-3)^2' -> 'k = mol^-1 dm^3 s^-1'.", "bbox": [0.0, 0.82, 0.55, 0.99]}
+  ],
+  "data": {
+    "rate_unit_assumed": "mol dm^-3 s^-1",
+    "units_table": [
+      {"rate_equation": "rate = k[a]^0", "order": "Zeroth", "unit_of_k": "mol dm^-3 s^-1"},
+      {"rate_equation": "rate = k[a]^1", "order": "First", "unit_of_k": "s^-1"},
+      {"rate_equation": "rate = k[a]^2", "order": "Second", "unit_of_k": "dm^3 mol^-1 s^-1"}
+    ]
+  },
+  "key_concepts": [
+    "Rate = k[A]^x[B]^y",
+    "k = rate constant; depends on reaction and temperature only",
+    "x, y = orders of reaction with respect to A and B; found only by experiment, NOT equal to the coefficients a, b",
+    "x and y can be integers, fractions or zero",
+    "Overall order = x + y (usually less than 3)",
+    "Unit of k depends on overall order: zeroth mol dm^-3 s^-1, first s^-1, second dm^3 mol^-1 s^-1",
+    "Larger k means faster reaction; k increases with temperature"
+  ],
+  "animation": {
+    "mode": "2d",
+    "concept": "The unit of k is not fixed: it is whatever makes both sides of rate = k[A]^n carry mol dm^-3 s^-1, so it changes with the order n.",
+    "why": "The table of units is the part students memorise blindly and the handwritten cancellations show the real derivation. Animating the cancellation of [A]^n against the rate unit turns the table into a derivation. Page 2 and page 4 use graphs, so this page uses an algebra/unit-cancellation panel.",
+    "anchor_bbox": [0.16, 0.79, 0.86, 0.99],
+    "duration_s": 32,
+    "steps": [
+      {"t": 0, "dur": 4, "visual": "Flat panel floats above the table. Large text sprite: 'Rate = k[A]^x[B]^y'. Then 'x' and 'y' glow purple and 'a', 'b' from a small 'aA + bB -> products' line below glow grey with a red 'not equal' sign between x/a and y/b.", "caption": "x, y come from experiments, not from the mole ratio a, b"},
+      {"t": 4, "dur": 4, "visual": "Reduce to a single reactant: equation morphs to 'Rate = k[A]^n'. A unit tag 'rate: mol dm^-3 s^-1' (orange) appears on the left side. Three buttons/rows appear: n = 0, n = 1, n = 2 labelled Zeroth, First, Second.", "caption": "Let the unit of rate be mol dm^-3 s^-1"},
+      {"t": 8, "dur": 7, "visual": "Row n = 0: 'mol dm^-3 s^-1 = k x (mol dm^-3)^0'. The bracket term shrinks to the number 1 (red '=1' as in the handwriting). Left side unit slides across and lands in the k box: 'k = mol dm^-3 s^-1'.", "caption": "Zeroth order: k = mol dm^-3 s^-1"},
+      {"t": 15, "dur": 7, "visual": "Row n = 1: 'mol dm^-3 s^-1 = k x (mol dm^-3)'. Both 'mol dm^-3' blocks turn red and get a strike-through line (cancel), leaving 's^-1' which slides into the k box.", "caption": "First order: k = s^-1"},
+      {"t": 22, "dur": 7, "visual": "Row n = 2: 'mol dm^-3 s^-1 = k x (mol dm^-3)^2'. One 'mol dm^-3' cancels, leaving 's^-1 = k x mol dm^-3', so k = s^-1 / (mol dm^-3) which rewrites as 'mol^-1 dm^3 s^-1'. Highlight exponent flips (mol -1, dm +3).", "caption": "Second order: k = mol^-1 dm^3 s^-1"},
+      {"t": 29, "dur": 3, "visual": "All three rows collapse into the textbook table (Zeroth | First | Second with their units) with the three k units highlighted orange.", "caption": "Unit of k depends on the overall order"}
+    ],
+    "elements": [
+      "floating flat panel (plane) with dark background",
+      "text sprites: 'Rate = k[A]^x[B]^y', 'aA + bB -> products', 'Rate = k[A]^n'",
+      "unit tags as rounded boxes (orange for rate unit, purple for order words)",
+      "red strike-through lines (thin boxes/lines) for cancellation",
+      "three stacked rows for n = 0, 1, 2",
+      "small summary table of 3 rows x 3 columns (Rate equation, Order, Unit of k)"
+    ],
+    "correctness_notes": [
+      "x and y are NOT the stoichiometric coefficients a and b; they are determined only by experiment",
+      "Zeroth order: rate = k, so k has the unit of rate: mol dm^-3 s^-1",
+      "First order: k = rate/[A] = (mol dm^-3 s^-1)/(mol dm^-3) = s^-1",
+      "Second order: k = rate/[A]^2 = (mol dm^-3 s^-1)/(mol dm^-3)^2 = mol^-1 dm^3 s^-1 (equivalently dm^3 mol^-1 s^-1)",
+      "The derivation holds for rate measured in mol dm^-3 s^-1 as stated on the page",
+      "Do not claim k is independent of temperature: k is constant only at a given temperature and increases with temperature"
+    ]
+  }
+}

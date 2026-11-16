@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#111418" />
+  <title>AR Teacher · 13.2 Rate equation</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <div id="stage"></div>
+  <div id="hud" class="hud">
+    <header class="hud-top">
+      <div id="hud-title" class="hud-title">AR Teacher</div>
+      <a id="hud-mode-link" class="hud-btn" href="#"></a>
+    </header>
+    <div id="hud-hint" class="hud-hint hidden"></div>
+    <div id="hud-error" class="hud-error hidden"></div>
+    <footer class="hud-bottom">
+      <div id="hud-caption" class="hud-caption hidden"></div>
+      <nav id="hud-picker" class="hud-picker hidden">
+        <button id="hud-prev" class="hud-btn" aria-label="Previous page">◀</button>
+        <select id="hud-select" aria-label="Page"></select>
+        <button id="hud-next" class="hud-btn" aria-label="Next page">▶</button>
+        <button id="hud-restart" class="hud-btn" aria-label="Restart animation">↺</button>
+      </nav>
+    </footer>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

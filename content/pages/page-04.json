@@ -1,0 +1,80 @@
+{
+  "page": 4,
+  "title": "O2 volume-time curves and initial rate vs concentration (order from graph)",
+  "summary": "Top graph: volume of O2 (cm3) against time (s) for five initial concentrations of H2O2(aq) (0.40, 0.32, 0.24, 0.16, 0.080 mol dm^-3), with tangents drawn at t = 0 for the first curves. Bottom graph: the initial rate of formation of oxygen (cm3 s^-1) against initial concentration is a straight line through the origin, so the initial rate is directly proportional to [H2O2(aq)] and the reaction is first order with respect to H2O2(aq).",
+  "blocks": [
+    {"id": "b1", "type": "graph", "text": "Volume of O2 (cm3) vs Time (s). Five curves labelled 1-5 with [H2O2(aq)] = 0.40, 0.32, 0.24, 0.16, 0.080 mol dm^-3. Y axis 0 to 28 (ticks every 2), X axis 0 to 180 (ticks every 20). All curves start at origin, rise steeply then level off.", "bbox": [0.17, 0.05, 0.85, 0.43]},
+    {"id": "b2", "type": "handwriting", "text": "(blue) 'tangent' with two blue tangent lines drawn from the origin on curves 1 and 2; circled numbers 1-5 beside curves", "bbox": [0.28, 0.11, 0.86, 0.38]},
+    {"id": "b3", "type": "graph", "text": "Initial rate of formation of oxygen (cm3 s^-1) vs Initial concentration of hydrogen peroxide solution (mol dm^-3). Y axis 0 to 0.5 (ticks 0.1), X axis 0 to 0.5 (ticks 0.1). Five points (labelled 1-5) lie on a straight line through the origin.", "bbox": [0.18, 0.45, 0.80, 0.91]},
+    {"id": "b4", "type": "handwriting", "text": "Right: 'rate' (y axis) and '[A]' (x axis) sketch; 'proportional symbol: directly proportional'. Left: 'Common in DSE'; 'Deduce the order of reaction from graph'", "bbox": [0.02, 0.43, 0.99, 0.91]},
+    {"id": "b5", "type": "handwriting", "text": "'Graph is a straight line. / Slope = 1 / Initial rate proportional to [H2O2(aq)] therefore order of reaction with respect to H2O2(aq) is 1.'", "bbox": [0.05, 0.89, 0.95, 0.98]}
+  ],
+  "data": {
+    "volume_time_graph": {
+      "x_axis": {"label": "Time (s)", "range": [0, 180], "tick_step": 20},
+      "y_axis": {"label": "Volume of O2 (cm3)", "range": [0, 28], "tick_step": 2},
+      "curves": [
+        {"id": 1, "H2O2_mol_dm3": 0.40, "approx_plateau_cm3": 26.5},
+        {"id": 2, "H2O2_mol_dm3": 0.32, "approx_plateau_cm3": 21},
+        {"id": 3, "H2O2_mol_dm3": 0.24, "approx_plateau_cm3": 16},
+        {"id": 4, "H2O2_mol_dm3": 0.16, "approx_plateau_cm3": 10.8},
+        {"id": 5, "H2O2_mol_dm3": 0.080, "approx_plateau_cm3": 5.7}
+      ],
+      "note": "Plateau values are read by eye from the graph (approximate, +/- 0.5 cm3). Individual curve points are not tabulated on the page. Plateau is roughly proportional to concentration (about 66 cm3 per mol dm^-3). Curves appear to reach about 80-90% of their plateau by t = 60-80 s."
+    },
+    "rate_concentration_graph": {
+      "x_axis": {"label": "Initial concentration of hydrogen peroxide solution (mol dm^-3)", "range": [0, 0.5], "tick_step": 0.1},
+      "y_axis": {"label": "Initial rate of formation of oxygen (cm3 s^-1)", "range": [0, 0.5], "tick_step": 0.1, "note": "top tick 0.5, axis arrow extends slightly above"},
+      "points_approx_read_from_graph": [
+        {"id": 5, "x": 0.08, "y": 0.10},
+        {"id": 4, "x": 0.16, "y": 0.215},
+        {"id": 3, "x": 0.24, "y": 0.32},
+        {"id": 2, "x": 0.32, "y": 0.41},
+        {"id": 1, "x": 0.40, "y": 0.51}
+      ],
+      "line": "straight line through the origin, passing close to all five points; gradient about 1.2-1.3 cm3 s^-1 per mol dm^-3 (read by eye)",
+      "note": "Point values are read by eye (approximate); the page prints no numeric table."
+    },
+    "handwritten_conclusion": "Graph is a straight line; 'Slope = 1' (student's note); initial rate proportional to [H2O2(aq)]; order of reaction with respect to H2O2(aq) is 1"
+  },
+  "key_concepts": [
+    "Higher initial [H2O2] gives a steeper curve at t = 0 (larger initial rate) and a larger final O2 volume",
+    "Initial rate = gradient of tangent at t = 0 on each volume-time curve",
+    "Rate vs concentration straight line through the origin means rate is directly proportional to concentration",
+    "Therefore first order with respect to H2O2(aq): rate = k[H2O2]",
+    "Deducing order from a graph is common in DSE"
+  ],
+  "animation": {
+    "mode": "2d",
+    "concept": "Each curve's tangent at t = 0 gives one point on the rate-concentration graph; five points form a straight line through the origin, so rate is proportional to [H2O2] and the order is 1.",
+    "why": "This is the table-to-graph mapping step of the method: five tangent slopes become five points on a second graph. Showing the gradients migrating from graph 1 to graph 2 explains how the two graphs on the page are connected.",
+    "anchor_bbox": [0.17, 0.05, 0.85, 0.91],
+    "duration_s": 36,
+    "steps": [
+      {"t": 0, "dur": 6, "visual": "Left panel: axes x 'Time (s)' 0-180 (ticks 20), y 'Volume of O2 (cm3)' 0-28 (ticks 2). Five curves draw in sequence as saturating exponentials V = Vmax(1 - e^(-t/tau)) with Vmax about 26.5, 21, 16, 10.8, 5.7 (concentration 0.40, 0.32, 0.24, 0.16, 0.080), colours dark to light, each tagged with a circled number 1-5 and '[H2O2(aq)] = ...mol dm^-3' at the right end. Right panel (empty) holds axes x 'Initial concentration (mol dm^-3)' 0-0.5, y 'Initial rate (cm3 s^-1)' 0-0.5.", "caption": "O2 volume vs time for 5 concentrations of H2O2(aq)"},
+      {"t": 6, "dur": 6, "visual": "Curve 1 highlighted, others dimmed. A blue tangent line grows from the origin along curve 1's initial slope (about 0.51 cm3 s^-1) up to the top of the plot; label 'tangent'. A dx/dy triangle shows the slope calculation with text 'initial rate = 0.51 cm3 s^-1 (approx.)'.", "caption": "Tangent at t = 0 gives the initial rate"},
+      {"t": 12, "dur": 6, "visual": "The slope value flies (small sphere moves along an arc) from the tangent into the right panel and lands as point 1 at (0.40, ~0.51), circled '1'.", "caption": "One experiment gives one point"},
+      {"t": 18, "dur": 9, "visual": "Repeat quickly for curves 2 to 5 (0.32 -> ~0.41, 0.24 -> ~0.32, 0.16 -> ~0.215, 0.080 -> ~0.10): each tangent flashes blue, slope flies across, points 2-5 appear with circled numbers. Tangents get visibly shallower.", "caption": "Repeat for each initial concentration"},
+      {"t": 27, "dur": 5, "visual": "Best-fit straight line grows from the origin through the five points. Origin ring highlighted. Text: 'straight line through origin'.", "caption": "Graph is a straight line through the origin"},
+      {"t": 32, "dur": 4, "visual": "Doubling demonstration: two arrows, x doubles from 0.16 to 0.32 and y roughly doubles (0.215 to ~0.41). Final text: 'Initial rate proportional to [H2O2(aq)] => first order'.", "caption": "Rate proportional to [H2O2(aq)]: first order"}
+    ],
+    "elements": [
+      "two flat panels with gridlines, axes, tick labels and arrowheads",
+      "5 curve polylines with distinct colours and circled number sprites",
+      "blue tangent line segment, dx/dy right-triangle lines",
+      "5 point spheres on right panel with number sprites",
+      "best-fit line from origin",
+      "text sprites for axis labels, slope readouts, concentration tags"
+    ],
+    "correctness_notes": [
+      "Axis ranges: top graph x 0-180 s, y 0-28 cm3; bottom graph x 0-0.5 mol dm^-3, y 0-0.5 cm3 s^-1",
+      "Concentrations: curve 1 = 0.40, 2 = 0.32, 3 = 0.24, 4 = 0.16, 5 = 0.080 mol dm^-3",
+      "Curve numeric values are approximate readings; do not label them as exact textbook data",
+      "Every curve starts at the origin (0,0), rises steeply then flattens to a plateau and never decreases",
+      "Initial rate is the gradient at t = 0, not the average gradient over the whole run",
+      "Initial rate vs concentration: straight line through the origin means rate proportional to concentration = first order with respect to H2O2(aq)",
+      "Y-axis unit of initial rate is cm3 s^-1 (volume of O2 per second), not mol dm^-3 s^-1",
+      "The student's note 'Slope = 1' refers to a constant, straight gradient (first order); the plotted line's numeric gradient reads about 1.2-1.3 cm3 s^-1 per mol dm^-3, so do not print 'slope = 1' as a value"
+    ]
+  }
+}

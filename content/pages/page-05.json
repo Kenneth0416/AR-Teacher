@@ -1,0 +1,78 @@
+{
+  "page": 5,
+  "title": "Example 1: Na2S2O3 + acid, disappearing cross experiment",
+  "summary": "Aqueous sodium thiosulphate and dilute sulphuric acid react to form a yellow precipitate of sulphur. Six test tubes use the same volume of acid (20.0 cm3 of 0.5 M H2SO4) but different volumes of 0.1 M Na2S2O3 made up with distilled water, and the time for a reference mark 'X' to disappear is recorded. Because the time to blot out the cross is inversely proportional to the average rate, initial rate is approximately proportional to 1/t; distilled water keeps the total volume and acid concentration constant so that Na2S2O3 concentration is the only variable.",
+  "blocks": [
+    {"id": "b1", "type": "heading", "text": "Example 1: Determining initial rates in reaction of Na2S2O3 and acid", "bbox": [0.17, 0.04, 0.82, 0.07]},
+    {"id": "b2", "type": "text", "text": "When aqueous solutions of sodium thiosulphate and dilute sulphuric acid are mixed, a yellow precipitate of sulphur forms.", "bbox": [0.17, 0.07, 0.88, 0.11]},
+    {"id": "b3", "type": "equation", "text": "S2O3^2-(aq) + 2H+(aq) -> S(s) + SO2(g) + H2O(l)", "bbox": [0.28, 0.12, 0.72, 0.15]},
+    {"id": "b4", "type": "text", "text": "A series of test tube experiments was done with the same amount of acid but different initial concentrations of sodium thiosulphate solution. The time for the disappearance of a reference mark 'X' placed across the test tube was noted. The results were obtained at room temperature and listed in the table below.", "bbox": [0.17, 0.15, 0.88, 0.24]},
+    {"id": "b5", "type": "table", "text": "Columns: Test tube | Volume of 0.5 M H2SO4(aq) added (cm3) | Volume of 0.1 M Na2S2O3(aq) added (cm3) | Volume of distilled water added (cm3) | Time for the complete disappearance of the reference mark (s) | (handwritten) 1/t", "bbox": [0.09, 0.26, 0.93, 0.51]},
+    {"id": "b6", "type": "handwriting", "text": "'1/t ~ rate' with star and Cantonese note about calculating ('配計!'); in the last column handwritten 1/t values 0.0055, 0.011, 0.016, 0.022, 0.027, 0.033", "bbox": [0.85, 0.27, 0.99, 0.50]},
+    {"id": "b7", "type": "text", "text": "Determine graphically the order of reaction with respect to Na2S2O3(aq) and calculate the rate constant of the reaction at room temperature.", "bbox": [0.17, 0.52, 0.88, 0.58]},
+    {"id": "b8", "type": "note", "text": "IMPORTANT NOTES: The time taken to 'blot out' the cross is inversely proportional to the average rate of reaction. We can approximately take the average rate from the start to this stage as initial rate. That is, initial rate is proportional to 1/t.", "bbox": [0.09, 0.60, 0.90, 0.71]},
+    {"id": "b9", "type": "handwriting", "text": "'up 1/t, up rate'; 'rate ~ 1/t'; 'rate not-equal 1/t' (approximately proportional, not equal); 'Common in DSE'", "bbox": [0.24, 0.62, 0.99, 0.72]},
+    {"id": "b10", "type": "note", "text": "Different volume of distilled water is added: to keep the total volume of solutions constant for fair comparisons between trials; to keep concentration of sulphuric acid constant; to ensure concentration of sodium thiosulphate is the only variable.", "bbox": [0.17, 0.72, 0.89, 0.83]},
+    {"id": "b11", "type": "note", "text": "Large excess of a high concentration of H2SO4 is used so that its concentration remains more or less constant during the reaction. The only variable is the initial concentration of Na2S2O3(aq).", "bbox": [0.09, 0.84, 0.90, 0.93]}
+  ],
+  "data": {
+    "table_title": "Disappearing cross experiment: Na2S2O3 + H2SO4",
+    "columns": ["test_tube", "vol_0.5M_H2SO4_cm3", "vol_0.1M_Na2S2O3_cm3", "vol_distilled_water_cm3", "time_s", "one_over_t_handwritten_s^-1"],
+    "rows": [
+      [1, 20.0, 5.0, 25.0, 181, 0.0055],
+      [2, 20.0, 10.0, 20.0, 91, 0.011],
+      [3, 20.0, 15.0, 15.0, 61, 0.016],
+      [4, 20.0, 20.0, 10.0, 45, 0.022],
+      [5, 20.0, 25.0, 5.0, 36, 0.027],
+      [6, 20.0, 30.0, 0.0, 30, 0.033]
+    ],
+    "totals_cm3": "each row sums to 50.0 cm3 (20.0 + Na2S2O3 + water)",
+    "notes": [
+      "1/t column is handwritten by the student; values transcribed as written. Tube 5: 1/36 = 0.0278, written 0.027 on the page.",
+      "Concentration of Na2S2O3 in the mixture is not printed; it can be derived as 0.1 M x volume / 50.0 cm3 (0.01, 0.02, 0.03, 0.04, 0.05, 0.06 mol dm^-3) but is not stated on this page",
+      "The graph of 1/t against volume (or concentration) of Na2S2O3 is on page 6"
+    ]
+  },
+  "key_concepts": [
+    "S2O3^2-(aq) + 2H+(aq) -> S(s) + SO2(g) + H2O(l): yellow sulphur precipitate makes the cross disappear",
+    "Time for cross to disappear is inversely proportional to average rate; initial rate is approximately proportional to 1/t",
+    "Larger 1/t means a faster reaction",
+    "Distilled water keeps total volume (50.0 cm3) and acid concentration constant, so [Na2S2O3] is the only variable",
+    "Large excess of high-concentration H2SO4 keeps its concentration more or less constant",
+    "Same temperature (room temperature) for all trials",
+    "Rate is approximated by 1/t, not equal to 1/t"
+  ],
+  "animation": {
+    "mode": "3d",
+    "concept": "Six test tubes with the same acid but increasing Na2S2O3 volume go cloudy faster as the cross is hidden by sulphur precipitate; time to blot out the cross gives rate approximately 1/t.",
+    "why": "The experiment is a physical apparatus (test tubes, cross, precipitate) and the table is hard to picture. A 3D view looking down the tube at the cross shows what 'time for disappearance' means, and the six times are compared on one shared clock so students see fast versus slow reactions directly. It differs from the graph and flask scenes of other pages.",
+    "anchor_bbox": [0.09, 0.26, 0.93, 0.51],
+    "duration_s": 36,
+    "steps": [
+      {"t": 0, "dur": 5, "visual": "Six transparent cylinders (test tubes) in a row on a rack, numbered 1-6. A black 'X' plane sits under each (viewed from above, camera tilted). Each tube is filled with a clear liquid. Small stacked bar labels above each tube show volumes: acid 20.0 (red part), Na2S2O3 5.0/10.0/15.0/20.0/25.0/30.0 (blue part), water 25.0/20.0/15.0/10.0/5.0/0.0 (clear part), total 50.0 cm3.", "caption": "Same acid; different Na2S2O3 volume; water makes up 50.0 cm3"},
+      {"t": 5, "dur": 3, "visual": "Text above rack: 'S2O3^2-(aq) + 2H+(aq) -> S(s) + SO2(g) + H2O(l)'. Yellow sulphur particles are shown as a small legend sphere. A shared stopwatch sprite appears at 0 s.", "caption": "Yellow sulphur precipitate forms"},
+      {"t": 8, "dur": 20, "visual": "Stopwatch runs time-compressed at 9x (1 s of animation = 9 s of experiment time, so the full 181 s plays in about 20 s; show 'x9' on the stopwatch). In each tube yellow translucent fog (small yellow spheres/opacity increasing) builds up and the cross visibly fades. Tube 6 blots out at 30 s, tube 5 at 36 s, tube 4 at 45 s, tube 3 at 61 s, tube 2 at 91 s, tube 1 at 181 s. When a tube blots out its cross is fully hidden, its timer freezes and a tag 't = ... s' appears over it, then 1/t value appears beneath (0.033, 0.027, 0.022, 0.016, 0.011, 0.0055).", "caption": "Time for the cross to disappear: 30 s ... 181 s"},
+      {"t": 28, "dur": 4, "visual": "Bar chart of 1/t drawn in front of the tubes: six bars growing from tube 1 (shortest, 0.0055) to tube 6 (tallest, 0.033). A bracket text: 'initial rate approx. proportional to 1/t'.", "caption": "Initial rate approx. proportional to 1/t"},
+      {"t": 32, "dur": 4, "visual": "Highlight the water volumes in the bar labels and the text 'only [Na2S2O3] varies; acid conc. and total volume constant' fade in; the Na2S2O3 portions pulse in blue.", "caption": "Water keeps volume and [H2SO4] constant"}
+    ],
+    "elements": [
+      "6 test tubes (cylinders, transparent) with rack (boxes)",
+      "liquid fill per tube with stacked coloured segments",
+      "black X under each tube (two thin boxes crossing)",
+      "yellow precipitate: many small yellow spheres or a plane with increasing opacity per tube",
+      "stopwatch text sprite and per-tube time tags",
+      "bar chart of 1/t (boxes) with text sprites",
+      "legend sprites for the reaction equation"
+    ],
+    "correctness_notes": [
+      "Use exactly the table values: times 181, 91, 61, 45, 36, 30 s for tubes 1-6",
+      "Volumes: H2SO4 0.5 M 20.0 cm3 in all tubes; 0.1 M Na2S2O3 5.0, 10.0, 15.0, 20.0, 25.0, 30.0 cm3; water 25.0, 20.0, 15.0, 10.0, 5.0, 0.0 cm3; total 50.0 cm3",
+      "Tube 6 (no water, highest [Na2S2O3]) goes cloudy first; tube 1 (most dilute) last",
+      "1/t is only proportional to the average rate (initial rate is approximately proportional to 1/t), not equal to the rate",
+      "The 1/t values are from the student's handwriting; do not recompute and display different rounding (tube 5: 0.027 as written)",
+      "The precipitate is yellow sulphur; SO2 is a gas that dissolves/escapes, not shown as precipitate",
+      "If speeding up time, show a visible clock multiplier so students do not think the reaction takes seconds",
+      "Concentration of Na2S2O3 after mixing is not stated on this page; if shown, label as 'derived: 0.1 M x V / 50.0 cm3'"
+    ]
+  }
+}

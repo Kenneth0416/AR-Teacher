@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AR Teacher - compile image targets</title>
+  <style>
+    body { font: 15px/1.5 system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+    button { font: inherit; padding: .5rem 1rem; }
+    progress { width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>Compile MindAR targets</h1>
+  <p>Fallback for <code>npm run compile-targets</code>. Compiles the 10 bundled page images (in order,
+    target index i = page i+1) into <code>pages.mind</code> in your browser. Save the downloaded file as
+    <code>public/targets/pages.mind</code>.</p>
+  <button id="go">Compile</button>
+  <p><progress id="bar" max="100" value="0"></progress></p>
+  <p id="status"></p>
+  <script type="module" src="./src/compile.js"></script>
+</body>
+</html>

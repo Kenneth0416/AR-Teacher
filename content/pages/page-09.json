@@ -1,0 +1,65 @@
+{
+  "page": 9,
+  "title": "Numerical method for finding orders",
+  "summary": "For X + Y -> products at 298 K, three experiments are compared. When [X] doubles with [Y] fixed (experiments 1 and 2), the initial rate doubles, so the order with respect to X is 1. When [Y] doubles with [X] fixed (experiments 1 and 3), the rate stays the same, so the order with respect to Y is 0, giving rate = k[X].",
+  "blocks": [
+    {"id": "b1", "type": "heading", "text": "II) Numerical method", "bbox": [0.12, 0.04, 0.4, 0.07]},
+    {"id": "b2", "type": "text", "text": "Example. You are given some information about the following reaction at 298 K: X + Y -> products", "bbox": [0.18, 0.09, 0.85, 0.17]},
+    {"id": "b3", "type": "table", "text": "Experiment | Initial concentration (mol dm^-3) [X], [Y] | Initial rate (x 10^-4 mol dm^-3 s^-1). Rows: 1: 0.02, 0.02, 0.64; 2: 0.04, 0.02, 1.28; 3: 0.02, 0.04, 0.64. Handwritten: x2 arrows between rows 1 and 2 on [X] and on rate, x2 on [Y] between rows 1 and 3, '=' marking rate unchanged.", "bbox": [0.14, 0.175, 0.85, 0.305]},
+    {"id": "b4", "type": "text", "text": "For the reaction, a) deduce the rate equation for the reaction, and b) calculate the rate constant for the reaction at 298K.", "bbox": [0.18, 0.325, 0.7, 0.4]},
+    {"id": "b5", "type": "handwriting", "text": "Red: order; rate = k[X]^a[Y]^b", "bbox": [0.37, 0.32, 0.9, 0.35]},
+    {"id": "b6", "type": "text", "text": "Solution a) From Experiments 1 and 2, under the same initial concentration of Y, initial rate doubles when concentration of X is doubled. Therefore order of reaction with respect to X is 1.", "bbox": [0.18, 0.425, 0.88, 0.545]},
+    {"id": "b7", "type": "text", "text": "From Experiments 1 and 3, under the same initial concentration of X, initial rate remains the same when concentration of Y is doubled. Therefore order of reaction with respect to Y is 0.", "bbox": [0.18, 0.55, 0.88, 0.66]},
+    {"id": "b8", "type": "equation", "text": "Rate equation: rate = k[X]", "bbox": [0.18, 0.67, 0.48, 0.71]}
+  ],
+  "data": {
+    "table": {
+      "columns": ["Experiment", "[X] (mol dm^-3)", "[Y] (mol dm^-3)", "Initial rate (x 10^-4 mol dm^-3 s^-1)"],
+      "rows": [
+        [1, 0.02, 0.02, 0.64],
+        [2, 0.04, 0.02, 1.28],
+        [3, 0.02, 0.04, 0.64]
+      ],
+      "temperature_K": 298
+    },
+    "result": {"order_X": 1, "order_Y": 0, "rate_equation": "rate = k[X]"}
+  },
+  "key_concepts": [
+    "Numerical method: compare two experiments in which only one concentration changes",
+    "Rate doubles when [X] doubles: first order in X",
+    "Rate unchanged when [Y] doubles: zero order in Y",
+    "Rate equation rate = k[X]^a[Y]^b gives rate = k[X]",
+    "Orders are found from experimental data, not from the equation"
+  ],
+  "animation": {
+    "mode": "2d",
+    "concept": "Controlled comparison: pick two experiments that differ in only one concentration, see what the rate does, and read off the order.",
+    "why": "The page teaches a reasoning method (change one variable, hold the other). Two side-by-side experiment cards with highlighted differences and a rate-bar comparison show this clearly, and it differs from the graph and particle animations on other pages.",
+    "anchor_bbox": [0.14, 0.175, 0.85, 0.305],
+    "duration_s": 32,
+    "steps": [
+      {"t": 0, "dur": 4, "visual": "Three flat cards hover above the table rows, labelled Experiment 1, 2, 3. Each card shows [X], [Y] values (0.02/0.02, 0.04/0.02, 0.02/0.04 mol dm^-3) and a vertical bar whose height is the initial rate: 0.64, 1.28, 0.64 (x 10^-4 mol dm^-3 s^-1); bar scale 1.28 = full height. Text sprite 'rate = k[X]^a[Y]^b' above.", "caption": "Three experiments for X + Y -> products at 298 K"},
+      {"t": 4, "dur": 6, "visual": "Cards 1 and 3 dim; cards 1 and 2 slide next to each other. The [Y] values (0.02 and 0.02) glow green as 'same'. The [X] values glow yellow: an arrow labelled 'x2' goes from 0.02 to 0.04.", "caption": "Experiments 1 and 2: [Y] fixed, [X] doubled"},
+      {"t": 10, "dur": 5, "visual": "The bar of experiment 1 (0.64) is compared with experiment 2 (1.28): a ghost copy of bar 1 stacks twice to match bar 2, and a 'x2' arrow appears on the rate. Text: 'rate x2'.", "caption": "Rate doubles when [X] doubles"},
+      {"t": 15, "dur": 3, "visual": "Equation sprite: 2 = 2^a  ->  a = 1, with a badge 'order with respect to X = 1'.", "caption": "Order with respect to X is 1"},
+      {"t": 18, "dur": 5, "visual": "Cards 1 and 3 slide together (card 2 dims). [X] values (0.02 and 0.02) glow green as 'same'; [Y] glows yellow with an arrow 'x2' from 0.02 to 0.04.", "caption": "Experiments 1 and 3: [X] fixed, [Y] doubled"},
+      {"t": 23, "dur": 5, "visual": "Bar 3 is the same height as bar 1 (0.64 and 0.64); an '=' sign appears between them with text 'rate unchanged'. Equation sprite: 1 = 2^b  ->  b = 0, badge 'order with respect to Y = 0'.", "caption": "Rate unchanged: order with respect to Y is 0"},
+      {"t": 28, "dur": 4, "visual": "The two badges merge into a framed box: 'rate = k[X]' (the [Y]^0 term fades away to nothing).", "caption": "Rate equation: rate = k[X]"}
+    ],
+    "elements": [
+      "3 experiment cards (planes with text sprites)",
+      "3 bar meshes for rate (scale 1.28 = full height)",
+      "x2 arrow sprites",
+      "green/yellow highlight outlines (same/changed)",
+      "equation text sprites",
+      "final framed result box"
+    ],
+    "correctness_notes": [
+      "Exact data: Exp 1: [X]=0.02, [Y]=0.02, rate 0.64; Exp 2: 0.04, 0.02, 1.28; Exp 3: 0.02, 0.04, 0.64 (rate units x 10^-4 mol dm^-3 s^-1; concentrations mol dm^-3)",
+      "Always compare experiments where only ONE concentration changes",
+      "Order with respect to X is 1; with respect to Y is 0; so rate = k[X] (not k[X][Y])",
+      "Orders come from experiments, not from the stoichiometry of X + Y -> products",
+      "Page 10 handles the algebraic version of the same data"
+    ]
+  }
+}

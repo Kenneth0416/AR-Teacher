@@ -1,0 +1,66 @@
+{
+  "page": 6,
+  "title": "Solution: 1/t against volume of Na2S2O3",
+  "summary": "Since rate is proportional to 1/time and the volume of Na2S2O3(aq) is proportional to its concentration (total volume is constant), a graph of 1/t against volume of Na2S2O3(aq) can be plotted. The plot is a straight line, so 1/t (relative initial rate) can stand in for rate and volume for concentration, because only the change is of interest.",
+  "blocks": [
+    {"id": "b1", "type": "heading", "text": "Solution", "bbox": [0.13, 0.04, 0.23, 0.07]},
+    {"id": "b2", "type": "equation", "text": "Let the rate equation be rate = k[Na2S2O3(aq)]^m", "bbox": [0.13, 0.065, 0.56, 0.095]},
+    {"id": "b3", "type": "text", "text": "Boxed: Since rate ∝ 1/time; volume of Na2S2O3(aq) ∝ [Na2S2O3(aq)], a graph of 1/t against volume of Na2S2O3(aq) can be plotted.", "bbox": [0.13, 0.085, 0.88, 0.145]},
+    {"id": "b4", "type": "handwriting", "text": "Red: ↑ volume , ↑ [Na2S2O3(aq)]  (volume up, concentration up)", "bbox": [0.55, 0.115, 0.83, 0.14]},
+    {"id": "b5", "type": "graph", "text": "Graph: y = Relative initial rate (s^-1), 0.005 to 0.040 labelled; x = Volume of sodium thiosulphate solution used (cm3), 5.0 to 35.0 labelled. Straight line with 6 points from x=5.0 to x=30.0.", "bbox": [0.13, 0.18, 0.86, 0.55]},
+    {"id": "b6", "type": "handwriting", "text": "Red: 1/t beside the y-axis label; small axes 'rate' (vertical) vs '[A]' (horizontal) at top right", "bbox": [0.80, 0.15, 0.99, 0.25]},
+    {"id": "b7", "type": "handwriting", "text": "Red star: use 1/t to represent rate; use volume to represent conc.; only want to observe the change so is ok to do so", "bbox": [0.82, 0.30, 1.0, 0.55]}
+  ],
+  "data": {
+    "graph": {
+      "x_axis": {"label": "Volume of sodium thiosulphate solution used (cm3)", "labelled_ticks": [5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0]},
+      "y_axis": {"label": "Relative initial rate (s^-1)", "labelled_ticks": [0.005, 0.010, 0.015, 0.020, 0.025, 0.030, 0.035, 0.040], "origin_label": "0"},
+      "line": "straight line from first point (x=5.0) to last point (x=30.0); line is drawn only over this range on the page",
+      "plotted_points_x_cm3": [5.0, 10.0, 15.0, 20.0, 25.0, 30.0],
+      "plotted_points_y_per_s_from_page5_table": [0.0055, 0.011, 0.016, 0.022, 0.027, 0.033],
+      "note": "Point y-values are the 1/t column of the page 5 table; the printed graph shows them at roughly these heights (last point slightly above 0.033, about 0.034 by eye, exact graph reading not given on page)."
+    },
+    "source_table_page5": {
+      "volume_Na2S2O3_cm3": [5.0, 10.0, 15.0, 20.0, 25.0, 30.0],
+      "time_s": [181, 91, 61, 45, 36, 30],
+      "one_over_t_per_s": [0.0055, 0.011, 0.016, 0.022, 0.027, 0.033]
+    }
+  },
+  "key_concepts": [
+    "Average rate over the start of the reaction approximates initial rate; rate ∝ 1/t",
+    "Total volume is constant, so volume of Na2S2O3(aq) ∝ [Na2S2O3(aq)]",
+    "Plot 1/t (relative initial rate) against volume (relative concentration)",
+    "Only relative change is needed, so proxies for rate and concentration are acceptable",
+    "Straight-line plot (1/t proportional to volume)"
+  ],
+  "animation": {
+    "mode": "2d",
+    "concept": "Turning the experiment table into a graph: each (volume, time) row becomes a point (volume, 1/t), and the points fall on a straight line.",
+    "why": "The page's idea is the change of variables (time to 1/t as rate proxy, volume as concentration proxy). Seeing table rows converted into plotted points makes that mapping concrete and differs from page 4's curve animation.",
+    "anchor_bbox": [0.13, 0.18, 0.86, 0.55],
+    "duration_s": 30,
+    "steps": [
+      {"t": 0, "dur": 5, "visual": "A flat panel floats above the page showing a 6-row mini table with columns Volume (cm3) = 5.0, 10.0, 15.0, 20.0, 25.0, 30.0 and Time (s) = 181, 91, 61, 45, 36, 30. Empty axes appear beside it: x from 0 to 35 cm3 (ticks every 5), y from 0 to 0.040 s^-1 (ticks every 0.005).", "caption": "Data from the disappearing-cross experiment"},
+      {"t": 5, "dur": 5, "visual": "A third column '1/t (s^-1)' is added. Each time value flips into its reciprocal one row at a time: 181 -> 0.0055, 91 -> 0.011, 61 -> 0.016, 45 -> 0.022, 36 -> 0.027, 30 -> 0.033. A tag 'rate ∝ 1/t' pulses above the column.", "caption": "rate ∝ 1/t, so use 1/t as relative initial rate"},
+      {"t": 10, "dur": 4, "visual": "A second tag over the volume column pulses: 'volume ∝ [Na2S2O3]' (total volume constant). Volume column header changes to 'Volume of Na2S2O3 (≈ concentration)'. The x-axis label on the axes becomes 'Volume of sodium thiosulphate solution used (cm3)'.", "caption": "Total volume constant, so volume ∝ concentration"},
+      {"t": 14, "dur": 9, "visual": "Six small spheres fly from the table rows to the axes one by one (about 1.5 s each), landing at (5.0, 0.0055), (10.0, 0.011), (15.0, 0.016), (20.0, 0.022), (25.0, 0.027), (30.0, 0.033). The table row briefly highlights as its point lands, and dashed guide lines to both axes appear then fade.", "caption": "Each experiment becomes one point (volume, 1/t)"},
+      {"t": 23, "dur": 4, "visual": "A straight line is drawn through the six points from x=5.0 to x=30.0. A gentle ghost extension of the line backward to the origin may be shown dotted.", "caption": "Points lie on a straight line"},
+      {"t": 27, "dur": 3, "visual": "Axis labels swap to the handwritten-note version: y 'rate' and x '[Na2S2O3]' with the text 'only the change matters'. Then the loop fades and restarts.", "caption": "Only the change matters, so the proxies are ok"}
+    ],
+    "elements": [
+      "floating table panel with 6 rows (volume, time, 1/t)",
+      "axes: x 0-35 cm3 (ticks every 5) labelled 'Volume of sodium thiosulphate solution used (cm3)', y 0-0.040 s^-1 (ticks every 0.005) labelled 'Relative initial rate (s^-1)'",
+      "6 spheres/points",
+      "straight best-fit line over x=5 to 30",
+      "dashed guide lines",
+      "text sprites for tags 'rate ∝ 1/t' and 'volume ∝ [Na2S2O3]'"
+    ],
+    "correctness_notes": [
+      "1/t is only an approximation of the initial rate (average rate up to the cross disappearing); call it 'relative initial rate'",
+      "Use exact table values: 181, 91, 61, 45, 36, 30 s and 1/t = 0.0055, 0.011, 0.016, 0.022, 0.027, 0.033 s^-1",
+      "Volume is proportional to concentration only because distilled water makes the total volume constant",
+      "Points are at x=5..30 only; the printed line does not extend to 35",
+      "Do not state the order from this page's text; the page only sets up the graph (a straight line indicates 1/t proportional to volume)"
+    ]
+  }
+}

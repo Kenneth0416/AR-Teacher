@@ -1,0 +1,66 @@
+{
+  "page": 2,
+  "title": "II) Order of reaction: zeroth, first and second order graphs",
+  "summary": "For A -> products, a 3x4 grid compares zeroth, first and second order reactions: their rate equations, concentration-time graphs, rate-concentration graphs and units of k. Zeroth order: [A] falls linearly and rate is constant (independent of [A]). First order: [A] decays exponentially and rate is directly proportional to [A] (slope = k). Second order: [A] decays faster at first then flattens, and rate vs [A] is a curve (rate vs [A]^2 is a straight line).",
+  "blocks": [
+    {"id": "b1", "type": "handwriting", "text": "(black) 'rate = k [A]^x ; x : order of reaction'", "bbox": [0.52, 0.24, 0.95, 0.28]},
+    {"id": "b2", "type": "heading", "text": "II) Order of reaction. For a reaction represented by: A -> products", "bbox": [0.08, 0.28, 0.45, 0.32]},
+    {"id": "b3", "type": "table", "text": "Header row: Zeroth order | First order | Second order. Row 'Rate equation': Rate = k | Rate = k[A] | Rate = k[A]^2", "bbox": [0.07, 0.32, 0.94, 0.38]},
+    {"id": "b4", "type": "graph", "text": "Concentration-time graphs ([A] vs Time): zeroth = straight line decreasing linearly to the time axis; first = curve decreasing steeply then flattening towards the axis; second = curve decreasing steeply (more sharply than first) then flattening", "bbox": [0.07, 0.38, 0.94, 0.52]},
+    {"id": "b5", "type": "graph", "text": "Rate-concentration graphs: zeroth = horizontal line, slope = 0, labelled k on the Rate axis; first = straight line through the origin, slope = k, x-axis [A]; second = upward-curving line through the origin vs [A], and a straight line (slope = k) vs [A]^2; x-axis 'A or [A]^2'", "bbox": [0.07, 0.52, 0.94, 0.66]},
+    {"id": "b6", "type": "table", "text": "Row 'Unit of rate constant, k': mol dm^-3 s^-1 (M s^-1) | s^-1 | mol^-1 dm^3 s^-1 (M^-1 s^-1)", "bbox": [0.07, 0.66, 0.94, 0.71]},
+    {"id": "b7", "type": "handwriting", "text": "Zeroth: 'y = c' (yellow); 'rate is only affected by value of k'; 'decrease linearly / stably'; 'rate is a constant'; 'up temp, up k, up rate !'; 'conc. of reactant doesn't affect rate!'. First: 'y = mx + c, c = 0'; 'decrease quickly'; 'steep'; 'decrease slowly'; 'flat'; 'near to 0'; 'up conc., up rate !'; 'C = 0' (circled origin); 'directly proportional'. Second: 'y = mx + c, c = 0 , if x is [A]^2'; 'decrease quickly'; 'steep'; 'decrease slowly'; 'flat, not near to 0'; 'up conc., up rate!'. Top-left: 'y = mx + c'.", "bbox": [0.02, 0.31, 0.99, 0.70]}
+  ],
+  "data": {
+    "grid": [
+      {"order": "Zeroth", "rate_equation": "Rate = k", "conc_time": "straight line, linear decrease", "rate_conc": "horizontal line, slope = 0, rate = k", "unit_of_k": "mol dm^-3 s^-1 (M s^-1)"},
+      {"order": "First", "rate_equation": "Rate = k[A]", "conc_time": "curve, steep at start, flattens (near 0)", "rate_conc": "straight line through origin, slope = k", "unit_of_k": "s^-1"},
+      {"order": "Second", "rate_equation": "Rate = k[A]^2", "conc_time": "curve, steep at start, flattens (not near 0 per handwriting)", "rate_conc": "curve vs [A]; straight line vs [A]^2 with slope = k", "unit_of_k": "mol^-1 dm^3 s^-1 (M^-1 s^-1)"}
+    ],
+    "axes": {
+      "conc_time": {"x": "Time", "y": "[A]", "note": "no numeric scale on the page"},
+      "rate_conc": {"x": "[A] (zeroth, first) or [A] or [A]^2 (second)", "y": "Rate", "note": "no numeric scale on the page"}
+    }
+  },
+  "key_concepts": [
+    "Zeroth order: Rate = k; [A] decreases linearly; rate independent of [A]",
+    "First order: Rate = k[A]; exponential-type decay of [A]; rate directly proportional to [A]; rate-[A] slope = k",
+    "Second order: Rate = k[A]^2; rate-[A] is a curve, rate-[A]^2 is a straight line with slope = k",
+    "Concentration-time graph gradient magnitude = rate at that moment",
+    "Units of k: mol dm^-3 s^-1, s^-1, mol^-1 dm^3 s^-1",
+    "Increasing temperature increases k and therefore the rate"
+  ],
+  "animation": {
+    "mode": "2d",
+    "concept": "Order of reaction decides how the rate responds to falling [A]: the gradient of the concentration-time curve is the rate, and it stays constant (zeroth), falls in proportion to [A] (first) or falls with [A]^2 (second).",
+    "why": "The page is a static comparison grid. Running one moving cursor through all three concentration-time graphs while a live tangent and a rate bar update ties the two rows together (graph shape equals rate-concentration relationship). Page 4 builds a graph from data; this page is a side-by-side comparison with a live cursor, not a construction.",
+    "anchor_bbox": [0.07, 0.38, 0.94, 0.66],
+    "duration_s": 36,
+    "steps": [
+      {"t": 0, "dur": 5, "visual": "Three floating panels side by side titled Zeroth, First, Second, each with axes (x: Time, y: [A], no numbers). Each shows its curve fading in: zeroth = straight descending line from [A]0 (top-left) to the time axis; first = exponential decay [A] = [A]0 e^(-kt); second = [A] = [A]0/(1+k[A]0 t) hyperbolic decay. All three start at the same [A]0 and the same initial slope magnitude so the shapes can be compared.", "caption": "Concentration-time graphs for A -> products"},
+      {"t": 5, "dur": 10, "visual": "A white dot moves along each curve from t = 0 to the end, synchronised. At each dot, a short tangent line (yellow) is drawn. Below each panel, a horizontal bar 'Rate = gradient' shows the tangent steepness: zeroth bar stays full length for the whole run; first bar shrinks smoothly toward ~0; second bar shrinks faster at first then slowly.", "caption": "Gradient of the curve = rate at that moment"},
+      {"t": 15, "dur": 7, "visual": "Dot returns to t = 0. Zeroth panel: text 'Rate = k, constant'. First panel: text 'steep -> flat'. Second panel: text 'steep -> flat, but not as near 0'. Lower half of each panel switches to the rate vs concentration graph: Rate axis vertical, [A] axis horizontal. Zeroth: horizontal line at height k labelled 'slope = 0'.", "caption": "Rate vs concentration: the same three reactions"},
+      {"t": 22, "dur": 7, "visual": "First panel: straight line through origin appears, red circle at origin labelled 'C = 0', label 'slope = k', label 'directly proportional'. The moving dot's [A] value is projected as a vertical marker on this line and its height equals the rate bar.", "caption": "First order: rate directly proportional to [A]"},
+      {"t": 29, "dur": 5, "visual": "Second panel: curve through origin, curving upward, as rate vs [A]. Then x-axis relabels from [A] to [A]^2 and the curve straightens into a line through origin, 'slope = k'.", "caption": "Second order: rate vs [A]^2 is a straight line"},
+      {"t": 34, "dur": 2, "visual": "Units row appears under panels: 'mol dm^-3 s^-1', 's^-1', 'mol^-1 dm^3 s^-1'.", "caption": "Unit of k depends on the order"}
+    ],
+    "elements": [
+      "3 flat panels each with two stacked axes sets (concentration-time on top, rate-concentration below)",
+      "polyline curves: linear, exponential, hyperbolic (second order) sampled at 100+ points",
+      "moving dot (sphere) and yellow tangent line segment",
+      "horizontal rate bars with live length",
+      "text sprites for labels and units",
+      "red circle ring at origin of first-order rate graph"
+    ],
+    "correctness_notes": [
+      "Zeroth-order [A]-t graph is a straight line: constant gradient equals constant rate = k",
+      "First-order [A]-t graph is an exponential decay that approaches zero but never reaches it (page notes 'flat, near to 0')",
+      "Second-order [A]-t graph also decays and flattens but more steeply at first and more slowly at the end (page notes 'flat, not near to 0'); never touches zero",
+      "Rate-[A] for zeroth order is a horizontal line (slope 0) at value k",
+      "Rate-[A] for first order is a straight line through the origin with slope = k (y = mx + c with c = 0)",
+      "Rate-[A] for second order is a parabola-shaped curve through origin; rate-[A]^2 is straight with slope = k",
+      "The page's concentration-time graphs have no numeric scales: use arbitrary units and do not display numbers on those axes",
+      "A real zeroth order curve would stop when [A] reaches 0; draw the line ending on the time axis"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "page": 7,
+  "title": "Example 2: Iodine clock reaction",
+  "summary": "The iodine clock reaction studies a reaction too fast to observe by adding a small fixed amount of S2O3^2-(aq) and starch. I2 produced by reaction (1) is consumed immediately by S2O3^2- (reaction 2), so the solution stays clear until all S2O3^2- is used up. Then free I2 forms a dark blue complex with starch (reaction 3), giving a sudden colour change that marks the time.",
+  "blocks": [
+    {"id": "b1", "type": "heading", "text": "Example 2: Determining initial rates in iodine clock reaction.", "bbox": [0.11, 0.04, 0.78, 0.065]},
+    {"id": "b2", "type": "text", "text": "The iodine clock reaction is commonly used to study the rate of reaction. Consider the following reaction.", "bbox": [0.11, 0.09, 0.9, 0.135]},
+    {"id": "b3", "type": "equation", "text": "H2O2(aq) + 2I-(aq) + 2H+(aq) -> I2(aq) + 2H2O(l)   reaction (1)", "bbox": [0.16, 0.16, 0.84, 0.19]},
+    {"id": "b4", "type": "handwriting", "text": "Red: too fast -> can't record the appearance of brown I2", "bbox": [0.6, 0.135, 0.95, 0.205]},
+    {"id": "b5", "type": "text", "text": "Rate can be studied by introducing a small and fixed amount of S2O3^2-(aq) and starch indicator. Once I2(aq) is produced from reaction (1), it is consumed immediately by the added S2O3^2-(aq), reaction (2).", "bbox": [0.11, 0.215, 0.9, 0.3]},
+    {"id": "b6", "type": "equation", "text": "2S2O3^2-(aq) + I2(aq) -> S4O6^2-(aq) + 2I-(aq)   reaction (2)", "bbox": [0.18, 0.31, 0.82, 0.34]},
+    {"id": "b7", "type": "text", "text": "However, when all the added S2O3^2-(aq) has been consumed, any free I2(aq) immediately forms a dark blue complex with the starch indicator.", "bbox": [0.11, 0.35, 0.89, 0.41]},
+    {"id": "b8", "type": "equation", "text": "I2(aq) + starch -> dark blue complex   reaction (3)", "bbox": [0.2, 0.42, 0.78, 0.45]},
+    {"id": "b9", "type": "handwriting", "text": "Red bracket on reactions: slow down the observation", "bbox": [0.88, 0.22, 1.0, 0.45]},
+    {"id": "b10", "type": "diagram", "text": "Time arrow over three beakers left to right. Beaker 1: H2O2 being added (arrow down), solution contains H+, I-, S2O3^2-, Starch; label 'Clear solution'. Beaker 2: H2O2, I-, H+, S2O3^2- + I2 (curved arrow), Starch; label 'Clear solution'. Beaker 3: solution dark; S2O3^2- crossed out, H2O2, I-, H+, I2 + Starch; label 'Dark blue solution'.", "bbox": [0.1, 0.46, 0.85, 0.75]},
+    {"id": "b11", "type": "equation", "text": "Summary below beakers: H2O2(aq) + 2I-(aq) + 2H+(aq) -> I2(aq) + 2H2O(l); 2S2O3^2-(aq) + I2(aq) -> S4O6^2-(aq) + 2I-(aq); I2(aq) + starch -> dark blue complex", "bbox": [0.3, 0.77, 0.85, 0.89]}
+  ],
+  "data": {},
+  "key_concepts": [
+    "Iodine clock reaction",
+    "Reaction (1) produces I2 (H2O2 + I- + H+)",
+    "S2O3^2- consumes I2 immediately (reaction 2), keeping the solution clear",
+    "Starch indicator forms a dark blue complex with free I2 (reaction 3) once all S2O3^2- is consumed",
+    "Sudden colour change marks a measurable time; fixed small amount of S2O3^2- slows down the observation"
+  ],
+  "animation": {
+    "mode": "3d",
+    "concept": "S2O3^2- silently mops up I2 as it forms; only when S2O3^2- runs out does I2 accumulate and the solution suddenly turns dark blue with starch.",
+    "why": "The key insight is a particle-level competition that produces a delayed, abrupt colour change. A 3D beaker with particles shows the consumption of S2O3^2- and the sudden change far better than the static three-beaker picture.",
+    "anchor_bbox": [0.1, 0.46, 0.85, 0.75],
+    "duration_s": 36,
+    "steps": [
+      {"t": 0, "dur": 5, "visual": "A transparent glass cylinder beaker (open top) filled with pale, clear liquid (a translucent box/cylinder). Inside float labelled particles: 6 H+ (small white spheres), 6 I- (light grey-blue spheres), 6 S2O3^2- (orange spheres), and 2 starch rods (small flat cream-coloured capsules). Particles jiggle randomly. Counter sprite 'S2O3^2- left: 6'.", "caption": "Clear solution: H+, I-, S2O3^2- and starch"},
+      {"t": 5, "dur": 4, "visual": "A large H2O2 sphere (blue-white, label) descends from above through the beaker mouth; then 6 H2O2 spheres spread in the liquid. Equation sprite for reaction (1) appears at the side.", "caption": "H2O2 added: reaction (1) starts"},
+      {"t": 9, "dur": 9, "visual": "Repeatedly (about every 1.5 s, 5 events): an H2O2 + 2 I- + 2 H+ cluster merges and a brown I2 sphere (larger, brown) appears; within 0.5 s it collides with an S2O3^2- pair (two orange spheres), and all three turn into S4O6^2- (one yellow-green sphere) plus two I- (grey-blue) returning to the pool. Liquid stays clear. Counter 'S2O3^2- left' drops 6, 5, 4, 3, 2. Equation (2) highlights.", "caption": "S2O3^2- consumes I2 immediately: reaction (2)"},
+      {"t": 18, "dur": 4, "visual": "Final S2O3^2- spheres reach zero; the last orange sphere is shown crossed out by a red X and disappears. Counter reads 'S2O3^2- left: 0'. Liquid still clear for a brief pause. A stopwatch sprite near the beaker reaches its stop moment.", "caption": "All the added S2O3^2- has been consumed"},
+      {"t": 22, "dur": 3, "visual": "A new brown I2 sphere forms (reaction 1) and, with nothing left to consume it, stays. It approaches a starch capsule and docks to it (I2 + starch). At that instant the liquid colour animates from clear to dark navy blue within about 0.4 s (sudden, not gradual).", "caption": "Free I2 + starch -> dark blue complex: reaction (3)"},
+      {"t": 25, "dur": 6, "visual": "The dark blue solution stays; more I2 spheres dock onto starch (blue-black complexes). The stopwatch freezes and is labelled 't = time for dark blue to appear'. The three equations (1), (2), (3) stack at the side with the one currently relevant highlighted.", "caption": "Sudden dark blue marks the end of the 'clock'"},
+      {"t": 31, "dur": 5, "visual": "Camera pulls back to show three small copies of the beaker in a row labelled with the book's stages: Clear solution, Clear solution, Dark blue solution, with a 'Time' arrow above. Then fade and loop.", "caption": "Clear -> clear -> dark blue as time passes"}
+    ],
+    "elements": [
+      "transparent beaker (open cylinder) with liquid cylinder whose colour/opacity animates clear -> dark navy",
+      "particle spheres: H+, I-, S2O3^2-, H2O2, I2 (brown), S4O6^2-",
+      "starch capsules",
+      "text sprite labels on particles (H2O2, H+, I-, S2O3^2-, Starch, I2)",
+      "red X over the last S2O3^2-",
+      "counter sprite and stopwatch sprite",
+      "Time arrow plane/line with three mini beakers",
+      "equation text sprites for reactions (1), (2), (3)"
+    ],
+    "correctness_notes": [
+      "Reaction (1): H2O2 + 2I- + 2H+ -> I2 + 2H2O(l)",
+      "Reaction (2): 2S2O3^2- + I2 -> S4O6^2- + 2I-; each I2 consumes TWO S2O3^2-, and I- is regenerated",
+      "Reaction (3): I2 + starch -> dark blue complex; this only happens once ALL the added S2O3^2- is consumed",
+      "The solution must stay clear/colourless until S2O3^2- is used up, then change suddenly; do not fade gradually",
+      "The page's handwriting says the reaction (1) alone is too fast to record the brown I2 appearance, so S2O3^2- and starch slow down the observation",
+      "S2O3^2- is a small FIXED amount, so the time to blue is a stopwatch for reaction (1)"
+    ]
+  }
+}

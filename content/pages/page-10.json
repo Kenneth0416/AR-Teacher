@@ -1,0 +1,69 @@
+{
+  "page": 10,
+  "title": "Alternative (algebraic) method, k, and order summary",
+  "summary": "Writing rate = k[X]^m[Y]^n and substituting the three experiments, dividing equation (2) by (1) gives 2 = 2^m so m = 1, and dividing (3) by (1) gives 1 = 2^n so n = 0. The rate constant from Experiment 1 is k = 3.2 x 10^-3 s^-1. A summary table shows how doubling or tripling the concentration changes the rate for zero, first and second order.",
+  "blocks": [
+    {"id": "b1", "type": "heading", "text": "Alternative method", "bbox": [0.15, 0.04, 0.4, 0.075]},
+    {"id": "b2", "type": "equation", "text": "Let the rate equation be rate = k[X]^m[Y]^n, where m and n are the orders of reaction with respect to X and Y respectively.", "bbox": [0.15, 0.07, 0.85, 0.17]},
+    {"id": "b3", "type": "equation", "text": "0.64 x 10^-4 = k(0.02)^m(0.02)^n ...(1); 1.28 x 10^-4 = k(0.04)^m(0.02)^n ...(2); 0.64 x 10^-4 = k(0.02)^m(0.04)^n ...(3)", "bbox": [0.25, 0.175, 0.6, 0.23]},
+    {"id": "b4", "type": "equation", "text": "Dividing (2) by (1): (1.28 x 10^-4)/(0.64 x 10^-4) = k(0.04)^m(0.02)^n / k(0.02)^m(0.02)^n, so 2 = (2)^m, therefore m = 1", "bbox": [0.22, 0.24, 0.6, 0.35]},
+    {"id": "b5", "type": "equation", "text": "Dividing (3) by (1): (0.64 x 10^-4)/(0.64 x 10^-4) = k(0.02)^m(0.04)^n / k(0.02)^m(0.02)^n, so 1 = (2)^n, therefore n = 0", "bbox": [0.22, 0.36, 0.6, 0.465]},
+    {"id": "b6", "type": "text", "text": "Thus, orders of reaction with respect to X and Y are 1 and 0 respectively. Rate equation: rate = k[X]", "bbox": [0.23, 0.47, 0.88, 0.57]},
+    {"id": "b7", "type": "equation", "text": "b) Using Experiment 1, k = (0.64 x 10^-4 mol dm^-3 s^-1)/(0.02 mol dm^-3) = 3.2 x 10^-3 s^-1", "bbox": [0.2, 0.595, 0.65, 0.72]},
+    {"id": "b8", "type": "handwriting", "text": "Red: 'unit !' with a star next to k", "bbox": [0.53, 0.64, 0.66, 0.68]},
+    {"id": "b9", "type": "table", "text": "IMPORTANT NOTES: The table below summarizes the effect of changing the initial concentration of a reactant on the rate of reaction. Order | Concentration doubled (x2) | Concentration tripled (x3): Zeroth: Does not change | Does not change; First: Double (x2) | Triples (x3); Second: Quadruples (x4) | Nonuples (x9). Handwritten: rate = k (zeroth), rate = k[A] (first), rate = k[A]^2 (second); blue x2, x3.", "bbox": [0.09, 0.735, 0.9, 0.93]}
+  ],
+  "data": {
+    "equations": {
+      "eq1": "0.64e-4 = k(0.02)^m(0.02)^n",
+      "eq2": "1.28e-4 = k(0.04)^m(0.02)^n",
+      "eq3": "0.64e-4 = k(0.02)^m(0.04)^n"
+    },
+    "results": {"m": 1, "n": 0, "rate_equation": "rate = k[X]", "k": "3.2 x 10^-3 s^-1"},
+    "summary_table": {
+      "columns": ["Order of reaction", "Concentration doubled (x2): the rate", "Concentration tripled (x3): the rate"],
+      "rows": [
+        ["Zeroth (rate = k)", "Does not change", "Does not change"],
+        ["First (rate = k[A])", "Double (x2)", "Triples (x3)"],
+        ["Second (rate = k[A]^2)", "Quadruples (x4)", "Nonuples (x9)"]
+      ]
+    }
+  },
+  "key_concepts": [
+    "Algebraic method: substitute data into rate = k[X]^m[Y]^n and divide equations so k and unchanged terms cancel",
+    "2 = 2^m gives m = 1; 1 = 2^n gives n = 0",
+    "k = rate/[X] for a first order reaction gives units s^-1",
+    "Concentration factor c, rate factor c^order: x2 gives 2^0, 2^1, 2^2 = 1, 2, 4; x3 gives 3^0, 3^1, 3^2 = 1, 3, 9"
+  ],
+  "animation": {
+    "mode": "2d",
+    "concept": "Rate changes by (concentration factor)^order: show a concentration block scaled x1, x2, x3 and the rate block scaling by 1, 2, 4 and 1, 3, 9 depending on the order.",
+    "why": "The summary table is the exam takeaway. A scaling visual of concentration vs rate for each order shows why 2^order and 3^order appear, and ties the algebra (2 = 2^m) to the table. It differs from the graph/particle/comparison animations on other pages.",
+    "anchor_bbox": [0.09, 0.735, 0.9, 0.93],
+    "duration_s": 34,
+    "steps": [
+      {"t": 0, "dur": 4, "visual": "Three horizontal lanes labelled 'Zeroth: rate = k', 'First: rate = k[A]', 'Second: rate = k[A]^2'. Each lane has a left 'concentration' block (a blue box of height 1 unit) and a right 'rate' block (an orange box of height 1 unit).", "caption": "Start: [A] = 1 unit, rate = 1 unit"},
+      {"t": 4, "dur": 3, "visual": "The first lane algebra appears: a small panel shows Dividing (2) by (1): 2 = 2^m, then m = 1, to link to the First order lane (highlight it). Fade after.", "caption": "Link: 2 = 2^m gives m = 1 (first order)"},
+      {"t": 7, "dur": 7, "visual": "In all lanes, the blue concentration block stretches smoothly to height 2 with a 'x2' label. Rate blocks respond: zeroth stays height 1 ('Does not change'); first grows to height 2 ('Double, x2'); second grows to height 4 ('Quadruples, x4'). Labels show 2^0 = 1, 2^1 = 2, 2^2 = 4.", "caption": "Concentration doubled: rate x1, x2, x4"},
+      {"t": 14, "dur": 4, "visual": "Both blocks return to height 1 with a brief reset flash.", "caption": "Back to the start"},
+      {"t": 18, "dur": 7, "visual": "The concentration block stretches to height 3 with label 'x3'. Rate blocks: zeroth stays 1 ('Does not change'); first grows to 3 ('Triples, x3'); second grows to 9 ('Nonuples, x9'). Labels 3^0 = 1, 3^1 = 3, 3^2 = 9. Second-order block scales to a taller height (use a camera zoom out or shrink all by factor 3).", "caption": "Concentration tripled: rate x1, x3, x9"},
+      {"t": 25, "dur": 4, "visual": "A summary table (3 rows x 2 columns) materialises below the lanes and fills in: Zeroth: Does not change / Does not change; First: x2 / x3; Second: x4 / x9.", "caption": "Summary of order against concentration change"},
+      {"t": 29, "dur": 5, "visual": "A text sprite shows the worked k: 'k = 0.64 x 10^-4 / 0.02 = 3.2 x 10^-3 s^-1  (first order: unit s^-1)' with the unit 's^-1' pulsing in red.", "caption": "k = 3.2 x 10^-3 s^-1 — don't forget the unit"}
+    ],
+    "elements": [
+      "3 lane rows with label sprites",
+      "blue concentration boxes (scalable height) and orange rate boxes (scalable height)",
+      "x2 / x3 label sprites",
+      "algebra text sprites for 2 = 2^m and exponent expressions",
+      "summary table text panel",
+      "k calculation sprite"
+    ],
+    "correctness_notes": [
+      "Zeroth: rate = k, rate unchanged; first: rate = k[A], rate x2 and x3; second: rate = k[A]^2, rate x4 and x9 (page spells 9x as 'Nonuples')",
+      "Algebra: (2)/(1) gives 1.28/0.64 = 2 = (0.04/0.02)^m = 2^m so m = 1; (3)/(1) gives 1 = 2^n so n = 0",
+      "k and the [Y] terms cancel when dividing, and the order for Y of 0 means [Y]^0 = 1",
+      "k = (0.64 x 10^-4 mol dm^-3 s^-1)/(0.02 mol dm^-3) = 3.2 x 10^-3 s^-1; units are s^-1 for a first-order reaction",
+      "The summary table is for changing the concentration of a single reactant with others constant"
+    ]
+  }
+}

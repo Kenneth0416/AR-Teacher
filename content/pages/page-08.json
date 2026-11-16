@@ -1,0 +1,66 @@
+{
+  "page": 8,
+  "title": "Iodine clock: 1/t against volume of H2O2",
+  "summary": "Four test tubes with different volumes of 0.2 M H2O2(aq) (topped up with distilled water) turn dark blue at different times; 1/t is proportional to rate. A graph of 1/t against volume of H2O2 added is a straight line through the origin, so the reaction is first order with respect to H2O2(aq).",
+  "blocks": [
+    {"id": "b1", "type": "table", "text": "Table: Test tube | Volume of 0.2 M H2O2(aq) added (cm3) [handwritten: ∝ [H2O2(aq)]] | Volume of distilled water added (cm3) | Time for the appearance of the dark blue colour when H2O2(aq) added are mixed (s) | 1/t [handwritten: ∝ rate]. Rows 1-4 as in data.", "bbox": [0.1, 0.07, 0.92, 0.29]},
+    {"id": "b2", "type": "handwriting", "text": "Red: 1/t ∝ rate (star); ∝ [H2O2(aq)] under the volume column header; small axes 'rate' vs '[A]' at right", "bbox": [0.76, 0.1, 0.99, 0.46]},
+    {"id": "b3", "type": "graph", "text": "Graph: y = 1/time (s^-1), 0.0100 to 0.0600; x = Volume of H2O2(aq) added (cm3), 0 to 5. Straight line from the origin through 4 points at x = 1, 2, 3, 4.", "bbox": [0.17, 0.31, 0.78, 0.77]},
+    {"id": "b4", "type": "text", "text": "From the graph, a straight line passing through the origin is obtained. The reaction is first order with respect to H2O2(aq).", "bbox": [0.14, 0.79, 0.89, 0.86]}
+  ],
+  "data": {
+    "table": {
+      "columns": ["Test tube", "Volume of 0.2 M H2O2(aq) added (cm3)", "Volume of distilled water added (cm3)", "Time for appearance of dark blue colour (s)", "1/t (s^-1)"],
+      "rows": [
+        [1, 1.0, 24.0, 78, 0.0128],
+        [2, 2.0, 23.0, 40, 0.0250],
+        [3, 3.0, 22.0, 27, 0.0370],
+        [4, 4.0, 21.0, 20, 0.0500]
+      ]
+    },
+    "graph": {
+      "x_axis": {"label": "Volume of H2O2(aq) added (cm3)", "labelled_ticks": [0, 1, 2, 3, 4, 5]},
+      "y_axis": {"label": "1/time (s^-1)", "labelled_ticks": [0.0100, 0.0200, 0.0300, 0.0400, 0.0500, 0.0600], "origin_label": "0"},
+      "plotted_points": [[1, 0.0128], [2, 0.0250], [3, 0.0370], [4, 0.0500]],
+      "line": "straight line passing through the origin (0,0) and the 4 points, ending at (4, 0.0500)"
+    }
+  },
+  "key_concepts": [
+    "Time for dark blue to appear (clock time) is inversely related to rate; 1/t ∝ rate",
+    "Volume of 0.2 M H2O2 added ∝ [H2O2(aq)] (distilled water keeps total volume constant)",
+    "Straight line through the origin for 1/t against volume means first order with respect to H2O2",
+    "Doubling the volume of H2O2 roughly halves the time"
+  ],
+  "animation": {
+    "mode": "3d",
+    "concept": "A race of four test tubes: more H2O2 means a shorter time to the sudden dark blue, so a larger 1/t (rate), and the finishing times give a straight-line graph.",
+    "why": "The data come from four parallel experiments, so showing four test tubes turning blue at different times makes the link between concentration, time and 1/t tangible, and it differs from the single-beaker mechanism animation on page 7.",
+    "anchor_bbox": [0.1, 0.07, 0.92, 0.29],
+    "duration_s": 36,
+    "steps": [
+      {"t": 0, "dur": 5, "visual": "Four glass test tubes (cylinders with rounded bottoms) stand in a rack (a box with four holes), numbered 1-4. Each contains clear liquid at the same height, labelled below: H2O2 1.0 / 2.0 / 3.0 / 4.0 cm3 and water 24.0 / 23.0 / 22.0 / 21.0 cm3. Small stacked blocks beside each tube show the H2O2 portion (blue-white) vs water portion (clear) of total 25.0 cm3.", "caption": "Same total volume, more 0.2 M H2O2 from tube 1 to 4"},
+      {"t": 5, "dur": 3, "visual": "A stopwatch sprite appears and all four tubes receive H2O2 simultaneously (a drop animation); timer starts at 0 s. Time scale: 1 s of real animation = 4 s of experiment time so that 78 s fits in about 20 s of animation.", "caption": "Start: all four mixed at t = 0"},
+      {"t": 8, "dur": 5, "visual": "Tube 4 turns sudden dark blue when the timer reads 20 s; a label '20 s' and '1/t = 0.0500' pops above it. Next tube 3 turns dark blue at 27 s ('1/t = 0.0370').", "caption": "Tube 4: 20 s. Tube 3: 27 s"},
+      {"t": 13, "dur": 6, "visual": "Tube 2 turns dark blue at 40 s ('1/t = 0.0250'), then tube 1 at 78 s ('1/t = 0.0128'). Each colour change is abrupt, not gradual. Finish order flags 1st-4th appear over tubes 4, 3, 2, 1.", "caption": "Tube 2: 40 s. Tube 1: 78 s"},
+      {"t": 19, "dur": 7, "visual": "A floating 2D panel shows the table with the finishing times; then axes (x 0-5 cm3, y 0-0.0600 s^-1). Four coloured dots fly from each tube to (1, 0.0128), (2, 0.0250), (3, 0.0370), (4, 0.0500).", "caption": "Plot 1/t against volume of H2O2"},
+      {"t": 26, "dur": 5, "visual": "A straight line is drawn from the origin (0,0) through the four points, extending to (4, 0.0500). Origin marker pulses.", "caption": "Straight line through the origin"},
+      {"t": 31, "dur": 5, "visual": "Text appears over the graph: 'rate ∝ [H2O2]  ->  first order with respect to H2O2(aq)'. Hold, then fade to loop.", "caption": "First order with respect to H2O2(aq)"}
+    ],
+    "elements": [
+      "test tube rack (box) and 4 test tubes (cylinder + half sphere bottoms) with liquid meshes whose colour switches clear -> dark blue",
+      "stopwatch text sprite",
+      "labels for H2O2/water volumes",
+      "finish-order flags",
+      "floating mini-graph: axes x 0-5, y 0-0.0600, 4 point spheres, line from origin",
+      "table text panel"
+    ],
+    "correctness_notes": [
+      "Exact data: tube 1: 1.0 cm3 H2O2, 24.0 water, 78 s, 1/t 0.0128; tube 2: 2.0, 23.0, 40 s, 0.0250; tube 3: 3.0, 22.0, 27 s, 0.0370; tube 4: 4.0, 21.0, 20 s, 0.0500",
+      "Total volume is 25.0 cm3 in each tube (volumes of H2O2 + distilled water; the page does not show the other reagents explicitly)",
+      "Dark blue appears suddenly, at the moment the fixed amount of S2O3^2- is used up",
+      "1/t ∝ rate, volume of H2O2 ∝ concentration",
+      "Straight line through the origin means first order with respect to H2O2(aq); do not claim exactly 2x or 4x times since 78/40 is only approx 2",
+      "More H2O2 gives a shorter time and a bigger 1/t"
+    ]
+  }
+}

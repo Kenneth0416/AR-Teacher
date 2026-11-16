@@ -1,0 +1,66 @@
+{
+  "page": 3,
+  "title": "C. Method of initial rate: graphical method (H2O2 decomposition)",
+  "summary": "The method of initial rate repeats the same experiment with different initial concentrations of one reactant while other reactants' concentrations and the temperature are kept constant. Initial rate is the instantaneous rate at time = 0 s; it is useful because the initial concentration is known. In the graphical method for 2H2O2(aq) -> 2H2O(l) + O2(g) with MnO2(s), the volume of O2 is plotted against time, a tangent is drawn at t = 0 on each curve to get the initial rate, then rate is plotted against concentration to find the order.",
+  "blocks": [
+    {"id": "b1", "type": "heading", "text": "C. Determining rate equations by method of initial rate", "bbox": [0.12, 0.06, 0.62, 0.08]},
+    {"id": "b2", "type": "text", "text": "The method of initial rate involves repeating the same experiment several times, but using a different initial concentration of a particular reactant.", "bbox": [0.15, 0.10, 0.88, 0.15]},
+    {"id": "b3", "type": "text", "text": "Concentrations of other reactants (if any) and temperature are kept constant.", "bbox": [0.15, 0.16, 0.88, 0.19]},
+    {"id": "b4", "type": "text", "text": "The initial rate of the reaction is determined for each initial concentration of that particular reactant.", "bbox": [0.15, 0.21, 0.88, 0.26]},
+    {"id": "b5", "type": "note", "text": "IMPORTANT NOTES: Initial rate is the instantaneous reaction rate at time = 0 s. The method of initial rate is important as the initial concentration of reactant(s) is known.", "bbox": [0.08, 0.28, 0.90, 0.40]},
+    {"id": "b6", "type": "handwriting", "text": "'Common in DSE'; 'Why initial rate is used?'; stars beside the two notes", "bbox": [0.18, 0.26, 0.92, 0.40]},
+    {"id": "b7", "type": "heading", "text": "I) Graphical method", "bbox": [0.15, 0.41, 0.40, 0.44]},
+    {"id": "b8", "type": "text", "text": "Consider the decomposition of H2O2(aq) in the presence of MnO2(s):", "bbox": [0.22, 0.46, 0.86, 0.49]},
+    {"id": "b9", "type": "equation", "text": "2H2O2(aq) --MnO2(s)--> 2H2O(l) + O2(g)", "bbox": [0.30, 0.49, 0.60, 0.54]},
+    {"id": "b10", "type": "text", "text": "The volume of oxygen collected may be plotted against time. A tangent is drawn to each curve at time t = 0 to find the initial rate corresponding to each initial concentration of H2O2(aq).", "bbox": [0.22, 0.55, 0.88, 0.62]},
+    {"id": "b11", "type": "text", "text": "A graph of rate against concentration can now be plotted to determine the order of reaction with respect to the H2O2(aq).", "bbox": [0.22, 0.64, 0.88, 0.69]},
+    {"id": "b12", "type": "note", "text": "IMPORTANT NOTES: The method is particularly useful when the reaction has a slow and recordable initial rate, and a sharp, measurable change such as colour change, precipitate formation, volume / mass change, etc.", "bbox": [0.08, 0.71, 0.90, 0.82]},
+    {"id": "b13", "type": "handwriting", "text": "'Method of finding initial rate: (1) Draw a tangent to curve at time t = 0; (2) Find the slope of tangent'; 'Common in DSE'", "bbox": [0.13, 0.84, 0.90, 0.97]}
+  ],
+  "data": {
+    "reaction": "2H2O2(aq) -> 2H2O(l) + O2(g), catalyst MnO2(s)",
+    "measured_quantity": "volume of O2 collected",
+    "constants_kept": ["concentrations of other reactants", "temperature"],
+    "numeric_data_on_page": "none (numbers appear on page 4)"
+  },
+  "key_concepts": [
+    "Initial rate = instantaneous rate at t = 0 s",
+    "Repeat the experiment with different initial concentrations of ONE reactant; keep other concentrations and temperature constant",
+    "Initial concentration is known, which is why initial rate is used",
+    "Volume of O2 collected is plotted against time; draw a tangent at t = 0 and find its slope = initial rate",
+    "Plot rate against concentration to determine order of reaction",
+    "Method suits reactions with a slow, recordable initial rate and a sharp measurable change (colour, precipitate, volume/mass)"
+  ],
+  "animation": {
+    "mode": "3d",
+    "concept": "Initial rate is measured as the gradient at t = 0 of the O2 volume-time curve: a gas syringe collects O2 from H2O2 + MnO2 and its plunger position gives the volume that is plotted live.",
+    "why": "The page describes the apparatus-based experiment without drawing it. Showing the flask, MnO2 and the gas syringe plunger moving while a live volume-time graph is traced gives the physical origin of the curve and the tangent at t = 0, ahead of the graphs on page 4. It is a 3D apparatus scene, not a graph-only animation.",
+    "anchor_bbox": [0.22, 0.46, 0.88, 0.69],
+    "duration_s": 32,
+    "steps": [
+      {"t": 0, "dur": 5, "visual": "3D bench scene: conical flask (cylinder, light-blue transparent liquid, ~60% full) labelled 'H2O2(aq)'; a small tube/spoon of black powder labelled 'MnO2(s)'; a delivery tube (thin cylinder) from the flask bung to a horizontal gas syringe (cylinder barrel with a plunger, scale 0 to 30 cm3), plunger at 0. A floating 2D panel to the right shows empty axes: x 'Time (s)', y 'Volume of O2 (cm3)'.", "caption": "H2O2(aq) with MnO2(s); O2(g) collected in a gas syringe"},
+      {"t": 5, "dur": 4, "visual": "Black MnO2 powder (small dark spheres) drops into the flask. Timer text sprite starts at t = 0 s. Equation floats above: '2H2O2(aq) -> 2H2O(l) + O2(g)' with 'MnO2(s)' over the arrow.", "caption": "Time starts at t = 0 s when MnO2 is added"},
+      {"t": 9, "dur": 8, "visual": "Small white bubbles (spheres) rise in the liquid rapidly at first and travel along the delivery tube. Plunger moves right quickly at first. On the graph panel a dark curve is drawn point by point: steep at the start then flattening. Bubble emission rate visibly slows as the curve flattens.", "caption": "Volume of oxygen collected is plotted against time"},
+      {"t": 17, "dur": 7, "visual": "Timer freezes at the end. On the panel, a yellow tangent line is drawn from the origin along the initial slope of the curve (extended past the curve), with a small right triangle (dx, dy) shown. Text next to the triangle: 'initial rate = slope of tangent at t = 0'. The part of the graph after t = 0 is dimmed.", "caption": "Draw a tangent at t = 0 and find its slope"},
+      {"t": 24, "dur": 8, "visual": "Replay compressed: three further flasks with decreasing H2O2 concentration (label 'higher', 'medium', 'lower' with darker to lighter blue liquid); each draws its own curve in the same panel with its own tangent at t = 0; curves plateau at lower final volumes and tangents are less steep. Constant-conditions labels appear: 'other reactants: same', 'temperature: same'.", "caption": "Repeat with different initial concentrations of H2O2"}
+    ],
+    "elements": [
+      "conical flask (cone/cylinder approximation with transparent material)",
+      "liquid volume (cylinder) with colour per concentration",
+      "MnO2 powder (small dark spheres) and spoon/boat (box)",
+      "bung, delivery tube (thin cylinders)",
+      "gas syringe: barrel cylinder with tick marks 0-30 cm3 and plunger cylinder that translates",
+      "bubble particles (small white spheres) rising and travelling along tube",
+      "floating graph plane with axes, curve polyline, tangent line and dx/dy triangle",
+      "text sprites: timer, labels, equation"
+    ],
+    "correctness_notes": [
+      "Equation: 2H2O2(aq) -> 2H2O(l) + O2(g), MnO2(s) is a catalyst written over the arrow, not a reactant",
+      "Volume of O2 vs time curve is steepest at t = 0 and flattens as H2O2 is used up; it levels off at a final volume that is proportional to the initial amount of H2O2",
+      "Initial rate = gradient of the tangent at t = 0 (units here cm3 s^-1 on page 4)",
+      "Only the concentration of H2O2 is varied; temperature and amount of MnO2 stay the same",
+      "Gas syringe reading increases as O2 forms; the gas, not the liquid, pushes the plunger",
+      "Page 3 gives no numbers: use illustrative values and do not present them as textbook data (page 4 holds the real numbers)"
+    ]
+  }
+}

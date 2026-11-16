@@ -1,0 +1,24 @@
+:root { color-scheme: dark; --fg: #f8f9fa; --bg: rgba(17, 20, 24, 0.72); --accent: #f59f00; }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #111418; color: var(--fg);
+  font: 15px/1.4 "Inter", "Helvetica Neue", "Segoe UI", Roboto, Arial, "Noto Sans TC", "PingFang TC", sans-serif;
+  -webkit-tap-highlight-color: transparent; }
+#stage { position: fixed; inset: 0; overflow: hidden; }
+#stage canvas { display: block; touch-action: none; }
+.hud { position: fixed; inset: 0; pointer-events: none; display: flex; flex-direction: column; justify-content: space-between; z-index: 10;
+  padding: max(10px, env(safe-area-inset-top)) max(10px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(10px, env(safe-area-inset-left)); }
+.hud.clean .hud-top, .hud.clean .hud-picker { display: none; }
+.hud-top { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; }
+.hud-title { background: var(--bg); padding: 6px 12px; border-radius: 10px; font-weight: 650; backdrop-filter: blur(6px); max-width: 80%; }
+.hud-bottom { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.hud-caption { background: var(--bg); padding: 8px 14px; border-radius: 12px; font-size: 17px; font-weight: 550; text-align: center; max-width: min(92vw, 760px); backdrop-filter: blur(6px); }
+.hud-picker { display: flex; gap: 6px; align-items: center; pointer-events: auto; }
+.hud-picker select { font: inherit; padding: 6px 8px; border-radius: 8px; background: var(--bg); color: var(--fg); border: 1px solid #495057; max-width: 60vw; }
+.hud-btn { pointer-events: auto; font: inherit; color: var(--fg); background: var(--bg); border: 1px solid #495057; border-radius: 8px; padding: 6px 10px; text-decoration: none; cursor: pointer; white-space: nowrap; }
+.hud-btn:hover { border-color: var(--accent); }
+.hud-hint { align-self: center; background: var(--bg); padding: 10px 16px; border-radius: 12px; text-align: center; font-weight: 550; }
+.hud-hint .frame { width: 46vmin; height: 60vmin; margin: 0 auto 10px; border: 3px dashed rgba(255,255,255,.75); border-radius: 10px; animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .35; transform: scale(.97); } }
+.hud-error { pointer-events: auto; align-self: center; background: #1b1f24; border: 1px solid #e03131; padding: 16px 18px; border-radius: 12px; max-width: min(92vw, 520px); }
+.hud-error a { color: #74c0fc; }
+.hidden { display: none !important; }
