@@ -4,6 +4,7 @@
 import * as THREE from 'three';
 import { SceneHost } from './scene-host.js';
 import { PAGE_COUNT } from '../pages.js';
+import { PoseSmoother } from './pose-smoother.js';
 
 const LOST_GRACE_S = 2.5;
 const TARGETS_URL = 'targets/pages.mind'; // relative to the page (public/targets/pages.mind)
@@ -71,6 +72,10 @@ export async function startAR({ hud, params, frozenT }) {
   window.__AR_HOST__ = host;
   let visibleTarget = null;
   let lostTimer = null;
+  // scenes mount on a group that follows the anchor with adaptive damping (see pose-smoother.js)
+  const smoother = new PoseSmoother({ strength: params.has('smooth') ? Number(params.get('smooth')) : 1 });
+  scene.add(smoother.group);
+  window.__AR_SMOOTHER__ = smoother;
 
   const showScanHint = () => hud.showHint('<div class="frame"></div>Point the camera at a textbook page (p.1–10)');
 
@@ -82,7 +87,8 @@ export async function startAR({ hud, params, frozenT }) {
       visibleTarget = i;
       clearTimeout(lostTimer);
       hud.hideHint();
-      host.mount(i + 1, anchor.group).then(() => host.resume());
+      smoother.follow(anchor.group);
+      host.mount(i + 1, smoother.group).then(() => host.resume());
     };
     anchor.onTargetLost = () => {
       state.lost.push(i);
@@ -109,7 +115,9 @@ export async function startAR({ hud, params, frozenT }) {
 
   let last = performance.now();
   renderer.setAnimationLoop(() => {
-    const now = performance.now(); host.update((now - last) / 1000); last = now;
+    const now = performance.now(); const dt = (now - last) / 1000; last = now;
+    smoother.update(dt);
+    host.update(dt);
     renderer.render(scene, camera);
   });
   window.addEventListener('pagehide', () => { try { mind.stop(); } catch { /* ignore */ } });
